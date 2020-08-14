@@ -9,6 +9,6 @@ namespace WSTowerApi.Repository
     interface IUsuarioRepository
     {
         IEnumerable<Usuario> GetAll();
-        void Login(Usuario usuario);
+        Usuario Login(Usuario usuario);
     }
 }

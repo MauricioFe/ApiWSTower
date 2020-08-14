@@ -29,6 +29,9 @@ namespace WSTowerApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<WsTowerContext>(option => option.UseSqlServer(Configuration.GetConnectionString("conn")));
+            services.AddTransient<IFuncaoRepository, FuncaoRepository>();
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            services.AddTransient<IRelatosRepository, RelatosRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
