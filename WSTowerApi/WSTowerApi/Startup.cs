@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using WSTowerApi.Data;
+using WSTowerApi.Repository;
 
 namespace WSTowerApi
 {
@@ -28,6 +29,10 @@ namespace WSTowerApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<WsTowerContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("conn")));
+            services.AddTransient<IFuncaoRepository, FuncaoRepository>();
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            services.AddTransient<IRelatosRepository, RelatosRepository>();
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

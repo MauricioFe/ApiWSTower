@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using WSTowerApi.Models;
 
 namespace WSTowerApi.Models
 {
@@ -13,7 +14,7 @@ namespace WSTowerApi.Models
         public string Email { get; set; }
         public string Senha { get; set; }
         public string Telefone { get; set; }
-        public int Funcao_id { get; set; }
+        public int Usuario_id { get; set; }
         [ForeignKey("id")]
         public Funcao Funcao { get; set; }
     }

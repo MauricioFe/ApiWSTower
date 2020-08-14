@@ -8,13 +8,13 @@ namespace WSTowerApi.Models
 {
     public class Relatos
     {
-        public int id { get; set; }
-        public string relato { get; set; }
-        public string imagem { get; set; }
-        public decimal latitude { get; set; }
-        public decimal longitude { get; set; }
-        public int usuario_id { get; set; }
+        public int Id { get; set; }
+        public string Relato { get; set; }
+        public string Imagem { get; set; }
+        public decimal Latitude { get; set; }
+        public decimal Longitude { get; set; }
+        public int Usuario_id { get; set; }
         [ForeignKey("id")]
-        public Usuario usuario { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }

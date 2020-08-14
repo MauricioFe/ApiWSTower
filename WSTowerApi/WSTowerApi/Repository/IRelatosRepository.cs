@@ -8,10 +8,10 @@ namespace WSTowerApi.Repository
 {
     interface IRelatosRepository
     {
-        IEnumerable<Funcao> GetAll();
-        Funcao Find(int id);
-        void Add(Funcao funcao);
-        void Update(Funcao funcao);
+        IEnumerable<Relatos> GetAll();
+        Relatos Find(int id);
+        void Add(Relatos relatos);
+        void Update(Relatos relatos);
         void Remove(int id);
     }
 }

@@ -8,10 +8,10 @@ namespace WSTowerApi.Repository
 {
     interface IUsuarioRepository
     {
-        IEnumerable<Funcao> GetAll();
-        Funcao Find(int id);
-        void Add(Funcao funcao);
-        void Update(Funcao funcao);
+        IEnumerable<Usuario> GetAll();
+        Usuario Find(int id);
+        void Add(Usuario Usuario);
+        void Update(Usuario Usuario);
         void Remove(int id);
     }
 }
