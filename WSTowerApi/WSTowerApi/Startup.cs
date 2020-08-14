@@ -27,12 +27,7 @@ namespace WSTowerApi
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddDbContext<WsTowerContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("conn")));
-            services.AddTransient<IFuncaoRepository, FuncaoRepository>();
-            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
-            services.AddTransient<IRelatosRepository, RelatosRepository>();
-            
+        {            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
