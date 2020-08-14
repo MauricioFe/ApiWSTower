@@ -13,7 +13,7 @@ namespace WSTowerApi.Models
         public string Email { get; set; }
         public string Senha { get; set; }
         public string Telefone { get; set; }
-        public string Funcao_id { get; set; }
+        public int Funcao_id { get; set; }
         [ForeignKey("id")]
         public Funcao Funcao { get; set; }
 

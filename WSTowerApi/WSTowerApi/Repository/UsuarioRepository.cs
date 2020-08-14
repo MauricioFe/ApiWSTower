@@ -16,6 +16,12 @@ namespace WSTowerApi.Repository
         {
             _context = context;
         }
+
+        public Usuario Find(int id)
+        {
+            return _context.Usuario.Include(u => u.Funcao).FirstOrDefault(u => u.Id == id);
+        }
+
         public IEnumerable<Usuario> GetAll()
         {
             return _context.Usuario.Include(u => u.Funcao).ToList();

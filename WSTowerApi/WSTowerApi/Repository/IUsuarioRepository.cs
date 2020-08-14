@@ -6,9 +6,10 @@ using WSTowerApi.Models;
 
 namespace WSTowerApi.Repository
 {
-    interface IUsuarioRepository
+   public interface IUsuarioRepository
     {
         IEnumerable<Usuario> GetAll();
+        Usuario Find(int id);
         Usuario Login(Usuario usuario);
     }
 }

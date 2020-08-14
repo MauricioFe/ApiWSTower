@@ -6,7 +6,7 @@ using WSTowerApi.Models;
 
 namespace WSTowerApi.Repository
 {
-    interface IFuncaoRepository
+    public interface IFuncaoRepository
     {
         IEnumerable<Funcao> GetAll();
     }
