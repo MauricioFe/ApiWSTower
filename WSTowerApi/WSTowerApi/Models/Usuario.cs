@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace WSTowerApi.Models
         public string Senha { get; set; }
         public string Telefone { get; set; }
         public string Funcao_id { get; set; }
+        [ForeignKey("id")]
         public Funcao Funcao { get; set; }
 
     }
