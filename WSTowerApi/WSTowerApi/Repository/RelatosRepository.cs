@@ -24,12 +24,12 @@ namespace WSTowerApi.Repository
 
         public Relato Find(int id)
         {
-            return _context.Relatos.Include(r => r.Usuario).FirstOrDefault(r => r.Id == id);
+            return _context.Relatos.Include(r => r.Usuario).FirstOrDefault(r => r.Id == id);          
         }
 
         public IEnumerable<Relato> GetAll()
         {
-            return _context.Relatos.Include(r => r.Usuario).ToList();
+            return _context.Relatos.ToList();
         }
 
         public void Remove(int id)

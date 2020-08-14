@@ -9,7 +9,7 @@ namespace WSTowerApi.Models
     public class Relato
     {
         public int Id { get; set; }
-        public int relato { get; set; }
+        public string relato { get; set; }
         public string Imagem{ get; set; }
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
