@@ -37,7 +37,7 @@ namespace WSTowerApi.Controllers
             return new ObjectResult(usuario);
         }
         [HttpPost]
-
+        [Route("login")]
         public IActionResult Login([FromBody] Usuario usuario)
         {
             if (usuario == null)
@@ -52,6 +52,18 @@ namespace WSTowerApi.Controllers
             }
 
             return CreatedAtRoute("GetUsuario", new { id = usuarioLogado.Id }, usuarioLogado);
+
+        }
+        [HttpPost]
+        public IActionResult Create([FromBody] Usuario usuario)
+        {
+            if (usuario == null)
+            {
+                return BadRequest();
+            }
+
+            _repo.Add(usuario);
+            return CreatedAtRoute("GetUsuario", new { id = usuario.Id }, usuario);
 
         }
     }

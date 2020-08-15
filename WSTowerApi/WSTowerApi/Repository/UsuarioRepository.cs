@@ -17,14 +17,20 @@ namespace WSTowerApi.Repository
             _context = context;
         }
 
+        public void Add(Usuario usuario)
+        {
+            _context.Usuario.Add(usuario);
+            _context.SaveChanges();
+        }
+
         public Usuario Find(int id)
         {
-            return _context.Usuario.Include(u => u.Funcao).FirstOrDefault(u => u.Id == id);
+            return _context.Usuario.Include(f=>f.Funcao).FirstOrDefault(u => u.Id == id);
         }
 
         public IEnumerable<Usuario> GetAll()
         {
-            return _context.Usuario.Include(u => u.Funcao).ToList();
+            return _context.Usuario.Include(f => f.Funcao).ToList();
         }
 
         public Usuario Login(Usuario usuario)

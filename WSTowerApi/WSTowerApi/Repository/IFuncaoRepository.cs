@@ -9,5 +9,6 @@ namespace WSTowerApi.Repository
     public interface IFuncaoRepository
     {
         IEnumerable<Funcao> GetAll();
+        void Add(Funcao funcao);
     }
 }

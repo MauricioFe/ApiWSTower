@@ -13,8 +13,8 @@ namespace WSTowerApi.Models
         public string Imagem{ get; set; }
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
-        public int Usuario_Id { get; set; }
-        [ForeignKey("id")]
+        public Nullable<int> UsuarioId { get; set; }
+        [ForeignKey ("usuario_id")]
         public Usuario Usuario { get; set; }
     }
 }

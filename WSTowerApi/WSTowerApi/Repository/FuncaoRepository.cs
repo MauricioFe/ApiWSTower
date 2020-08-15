@@ -19,5 +19,10 @@ namespace WSTowerApi.Repository
         {
             return _context.Funcao.ToList();
         }
+        public void Add(Funcao funcao)
+        {
+            _context.Funcao.Add(funcao);
+            _context.SaveChanges();
+        }
     }
 }

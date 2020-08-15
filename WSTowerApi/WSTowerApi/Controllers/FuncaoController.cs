@@ -25,5 +25,18 @@ namespace WSTowerApi.Controllers
         {
             return _repo.GetAll();
         }
+
+        [HttpPost]
+        public IActionResult Create([FromBody] Funcao funcao)
+        {
+            if (funcao == null)
+            {
+                return BadRequest();
+            }
+            _repo.Add(funcao);
+
+            return new NoContentResult();
+
+        }
     }
 }

@@ -29,7 +29,8 @@ namespace WSTowerApi.Repository
 
         public IEnumerable<Relato> GetAll()
         {
-            return _context.Relatos.ToList();
+            
+            return _context.Relatos.Include(r => r.Usuario).ToList();
         }
 
         public void Remove(int id)
