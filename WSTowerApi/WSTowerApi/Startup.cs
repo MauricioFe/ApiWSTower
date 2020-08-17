@@ -11,8 +11,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using WSTowerApi.Data;
-using WSTowerApi.Repository;
 
 namespace WSTowerApi
 {
@@ -28,10 +26,6 @@ namespace WSTowerApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<WsTowerContext>(option => option.UseSqlServer(Configuration.GetConnectionString("conn")));
-            services.AddTransient<IFuncaoRepository, FuncaoRepository>();
-            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
-            services.AddTransient<IRelatosRepository, RelatosRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
