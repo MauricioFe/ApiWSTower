@@ -6,7 +6,7 @@ using WSTowerApi.Models;
 
 namespace WSTowerApi.Repository
 {
-    interface IRelatosRepository
+    public interface IRelatosRepository
     {
         IEnumerable<Relatos> GetAll();
         Relatos Find(int id);

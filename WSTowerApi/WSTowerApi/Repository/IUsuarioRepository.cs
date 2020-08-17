@@ -6,7 +6,7 @@ using WSTowerApi.Models;
 
 namespace WSTowerApi.Repository
 {
-    interface IUsuarioRepository
+    public interface IUsuarioRepository
     {
         Usuario Find(int id);
         Usuario Login(Usuario usuario);
