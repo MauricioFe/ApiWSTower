@@ -13,7 +13,7 @@ namespace WSTowerApi.Models
         public  string Imagem { get; set; }
         public  decimal Latitude{ get; set; }
         public  decimal Longitude { get; set; }
-        public int UsuarioId { get; set; }
+        public Nullable<int> UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
     }
 }
