@@ -9,6 +9,6 @@ namespace WSTowerApi.Repository
     interface IUsuarioRepository
     {
         Usuario Find(int id);
-        void Login(Usuario usuario);
+        Usuario Login(Usuario usuario);
     }
 }

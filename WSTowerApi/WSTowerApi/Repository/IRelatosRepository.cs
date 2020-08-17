@@ -10,8 +10,8 @@ namespace WSTowerApi.Repository
     {
         IEnumerable<Relatos> GetAll();
         Relatos Find(int id);
-        void Add(Usuario usuario);
-        void Update(Usuario usuario);
+        void Add(Relatos relatos);
+        void Update(Relatos relatos);
         void Remove(int id);
     }
 }
