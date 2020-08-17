@@ -24,7 +24,6 @@ C:\Users\mauri\Desktop\Treinamento\Android\Criação de api\Projetos\ApiWSTower\
 C:\Users\mauri\Desktop\Treinamento\Android\Criação de api\Projetos\ApiWSTower\WSTowerApi\WSTowerApi\bin\Debug\netcoreapp2.1\WSTowerApi.runtimeconfig.dev.json
 C:\Users\mauri\Desktop\Treinamento\Android\Criação de api\Projetos\ApiWSTower\WSTowerApi\WSTowerApi\bin\Debug\netcoreapp2.1\WSTowerApi.dll
 C:\Users\mauri\Desktop\Treinamento\Android\Criação de api\Projetos\ApiWSTower\WSTowerApi\WSTowerApi\bin\Debug\netcoreapp2.1\WSTowerApi.pdb
-C:\Users\mauri\Desktop\Treinamento\Android\Criação de api\Projetos\ApiWSTower\WSTowerApi\WSTowerApi\obj\Debug\netcoreapp2.1\WSTowerApi.csprojAssemblyReference.cache
 C:\Users\mauri\Desktop\Treinamento\Android\Criação de api\Projetos\ApiWSTower\WSTowerApi\WSTowerApi\obj\Debug\netcoreapp2.1\WSTowerApi.AssemblyInfoInputs.cache
 C:\Users\mauri\Desktop\Treinamento\Android\Criação de api\Projetos\ApiWSTower\WSTowerApi\WSTowerApi\obj\Debug\netcoreapp2.1\WSTowerApi.AssemblyInfo.cs
 C:\Users\mauri\Desktop\Treinamento\Android\Criação de api\Projetos\ApiWSTower\WSTowerApi\WSTowerApi\obj\Debug\netcoreapp2.1\WSTowerApi.csproj.CoreCompileInputs.cache
