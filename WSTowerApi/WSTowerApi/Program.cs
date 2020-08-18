@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace WSTowerApi
+namespace WsTowerApi
 {
     public class Program
     {
@@ -19,7 +19,6 @@ namespace WSTowerApi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UseIISIntegration();
+                .UseStartup<Startup>();
     }
 }

@@ -14,7 +14,7 @@ using Microsoft.Extensions.Options;
 using WSTowerApi.Data;
 using WSTowerApi.Repository;
 
-namespace WSTowerApi
+namespace WsTowerApi
 {
     public class Startup
     {
