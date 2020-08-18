@@ -22,7 +22,7 @@
       }
     },
     "WSTowerApi": {
-      "commandName": "Executable",
+      "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {

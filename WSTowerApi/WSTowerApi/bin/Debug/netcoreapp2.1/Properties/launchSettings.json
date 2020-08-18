@@ -2,6 +2,10 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/WSTowerApi",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:65532",
       "sslPort": 44317
@@ -20,7 +24,7 @@
     "WSTowerApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api/relatos",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
