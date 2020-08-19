@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\WsTowerApi.csproj": {}
+    "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\WsTowerApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\WsTowerApi.csproj": {
+    "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\WsTowerApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\WsTowerApi.csproj",
+        "projectUniqueName": "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\WsTowerApi.csproj",
         "projectName": "WsTowerApi",
-        "projectPath": "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\WsTowerApi.csproj",
+        "projectPath": "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\WsTowerApi.csproj",
         "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\obj\\",
+        "outputPath": "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
           "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -45,7 +41,7 @@
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.1, )",
+              "version": "[2.1.21, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Razor.Design": {
@@ -56,7 +52,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.1.21, )",
               "autoReferenced": true
             }
           },
@@ -71,6 +67,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

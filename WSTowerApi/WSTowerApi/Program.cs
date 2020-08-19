@@ -19,6 +19,7 @@ namespace WsTowerApi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+            .UseUrls("http://192.168.0.14:5000;https://192.168.0.14:5001;")
+            .UseStartup<Startup>();
     }
 }
