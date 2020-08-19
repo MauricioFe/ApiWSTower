@@ -13,13 +13,6 @@ namespace WsTowerApi
 {
     public class Program
     {
-        public IPAddress RetIP()
-        {
-            string nome = Dns.GetHostName();
-
-            IPAddress[] ip = Dns.GetHostAddresses(nome);
-            return ip[3];
-        }
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
@@ -31,7 +24,7 @@ namespace WsTowerApi
 
             IPAddress[] ip = Dns.GetHostAddresses(nome);
             return WebHost.CreateDefaultBuilder(args)
-            .UseUrls("http://" + ip[3] + ":5000;https://" + ip[3] + ":5001;")
+            .UseUrls("http://" + ip[5] + ":5000;https://" + ip[5] + ":5001;")
             .UseStartup<Startup>();
         }
     }
