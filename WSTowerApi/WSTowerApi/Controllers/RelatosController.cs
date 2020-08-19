@@ -78,7 +78,7 @@ namespace WSTowerApi.Controllers
             relatoEditado.Latitude = relato.Latitude;
             relatoEditado.Longitude = relato.Longitude;
             relatoEditado.UsuarioId = relato.UsuarioId;
-            _repo.Add(relato);
+            _repo.Update(relato);
             return CreatedAtRoute("GetRelato", new { id = relato.Id }, relato);
         }
     }
