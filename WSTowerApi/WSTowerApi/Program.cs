@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Sockets;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
@@ -20,11 +21,13 @@ namespace WsTowerApi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
-            string nome = Dns.GetHostName();
-
-            IPAddress[] ip = Dns.GetHostAddresses(nome);
+            string ip = null;
+            foreach (var IP in Dns.GetHostAddresses(Dns.GetHostName()).Where(address => address.AddressFamily == AddressFamily.InterNetwork))
+            {
+                ip = IP.ToString();
+            }
             return WebHost.CreateDefaultBuilder(args)
-            .UseUrls("http://" + ip[5] + ":5000;https://" + ip[5] + ":5001;")
+            .UseUrls("http://" + ip + ":5000;https://" + ip + ":5001;")
             .UseStartup<Startup>();
         }
     }
