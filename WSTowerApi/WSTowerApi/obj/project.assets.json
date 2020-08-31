@@ -11880,20 +11880,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mauri\\.nuget\\packages\\": {}
+    "C:\\Users\\mauri\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\WsTowerApi.csproj",
+      "projectUniqueName": "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\WsTowerApi.csproj",
       "projectName": "WsTowerApi",
-      "projectPath": "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\WsTowerApi.csproj",
+      "projectPath": "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\WsTowerApi.csproj",
       "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\obj\\",
+      "outputPath": "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
