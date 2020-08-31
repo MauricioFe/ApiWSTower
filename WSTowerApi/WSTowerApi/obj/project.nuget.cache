@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uuvPEd4+ph4GWgW5E2E2I3iYwxBL/akSmJeVQhZ/mUOL5Jm6QKqUiavhU1YyQKGAkbUrplcBSqxem8bDfVP5wQ==",
+  "dgSpecHash": "w+ORFw6SZlP5rZ6hN/+hBu2IcBvvNgQ5ra5zTph9zCOrOKcHANb+Lg1ggK2y18GIa3QPLKckqrNYNGyWJXy0lA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauri\\Desktop\\Treinamento\\Android\\Criação de api\\Projetos\\ApiWSTower\\WsTowerApi\\WsTowerApi\\WsTowerApi.csproj",
+  "projectFilePath": "C:\\Users\\mauri\\Estudos\\Treinamento\\Android\\Criação Api\\Projetos\\ApiWSTower\\WSTowerApi\\WsTowerApi\\WsTowerApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauri\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
