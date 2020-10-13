@@ -47,7 +47,6 @@ namespace WsTowerApi
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

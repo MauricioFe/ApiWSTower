@@ -8,6 +8,7 @@ namespace WSTowerApi.Repository
 {
     public interface IUsuarioRepository
     {
+        IEnumerable<Usuario> GetAll();
         Usuario Find(int id);
         Usuario Login(Usuario usuario);
     }

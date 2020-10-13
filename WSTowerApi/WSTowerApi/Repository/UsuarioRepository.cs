@@ -22,6 +22,11 @@ namespace WSTowerApi.Repository
             return _context.Usuario.Include(u => u.Funcao).FirstOrDefault(u => u.Id == id);
         }
 
+        public IEnumerable<Usuario> GetAll()
+        {
+            return _context.Usuario.ToList();
+        }
+
         public Usuario Login(Usuario usuario)
         {
              return _context.Usuario.Include(u  => u.Funcao).FirstOrDefault(u => u.Email == usuario.Email && u.Senha == usuario.Senha);

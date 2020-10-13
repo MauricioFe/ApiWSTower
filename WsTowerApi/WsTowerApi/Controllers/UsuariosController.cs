@@ -11,14 +11,21 @@ namespace WSTowerApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UsuariosController : ControllerBase
     {
         private readonly IUsuarioRepository _repo;
 
-        public UsuarioController(IUsuarioRepository repo) 
+        public UsuariosController(IUsuarioRepository repo) 
         {
             _repo = repo;
         }
+
+        [HttpGet]
+        public IEnumerable<Usuario> GetAll()
+        {
+            return _repo.GetAll();
+        }
+
         [HttpGet("{id}", Name ="Get")]
         public IActionResult GetById(int id)
         {

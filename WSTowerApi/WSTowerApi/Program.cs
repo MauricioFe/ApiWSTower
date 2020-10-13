@@ -27,7 +27,7 @@ namespace WsTowerApi
                 ip = IP.ToString();
             }
             return WebHost.CreateDefaultBuilder(args)
-            .UseUrls("http://" + ip + ":5000;https://" + ip + ":5001;")
+            .UseUrls("http://" + ip + ":5000")
             .UseStartup<Startup>();
         }
     }
