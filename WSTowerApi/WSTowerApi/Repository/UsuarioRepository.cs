@@ -17,6 +17,12 @@ namespace WSTowerApi.Repository
             _context = context;
         }
 
+        public void Add(Usuario usuario)
+        {
+            _context.Usuario.Add(usuario);
+            _context.SaveChanges();
+        }
+
         public Usuario Find(int id)
         {
             return _context.Usuario.Include(u => u.Funcao).FirstOrDefault(u => u.Id == id);
@@ -32,5 +38,17 @@ namespace WSTowerApi.Repository
              return _context.Usuario.Include(u  => u.Funcao).FirstOrDefault(u => u.Email == usuario.Email && u.Senha == usuario.Senha);
         }
 
+        public void Remove(int id)
+        {
+            var usuario = Find(id);
+            _context.Usuario.Remove(usuario);
+            _context.SaveChanges();
+        }
+
+        public void Update(Usuario usuario)
+        {
+            _context.Usuario.Update(usuario);
+            _context.SaveChanges();
+        }
     }
 }
