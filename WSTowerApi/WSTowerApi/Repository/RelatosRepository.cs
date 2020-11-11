@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Remotion.Linq.Parsing.ExpressionVisitors.Transformation.PredefinedTransformations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +43,7 @@ namespace WSTowerApi.Repository
 
         public void Update(Relatos relato)
         {
+            Relatos relatos = new Relatos();
             _context.Relatos.Update(relato);
             _context.SaveChanges();
         }
